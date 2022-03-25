@@ -15,9 +15,12 @@ const Products = () => {
 
 
         <div>
-            {
+            <div className='row'>
+ {
                 products.map((product)=>(<Single product={product}></Single>))
     }
+            </div>
+           
         </div>
     );
 };
