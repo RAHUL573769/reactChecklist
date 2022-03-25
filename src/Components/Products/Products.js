@@ -6,6 +6,8 @@ const Products = () => {
 
     const [products, setProducts] = useState([]);
 
+    const [cart, setCart] = useState([]);
+
     // console.log(products);
   const handleButton = () => {
         console.log('hi');
@@ -19,14 +21,22 @@ const Products = () => {
 
 
         <div className='shop'>
-            <div className='product-container'>
+
+
+<div className='product-container'>
+                
+            <div className='row'>
  {
                     products.map((product) => (<Single key={ product.id}product={product} handleButton={ handleButton}></Single>))
     }
 
             </div>
+            </div>
+            
             <div className='cart-container'>
-
+                <div className='row'>
+                    
+</div>
             </div>
            
         </div>
