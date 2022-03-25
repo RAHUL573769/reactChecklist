@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Single from '../Singleproducts/Single';
 import './Products.css'
 
 const Products = () => {
@@ -14,7 +15,9 @@ const Products = () => {
 
 
         <div>
-         
+            {
+                products.map((product)=>(<Single product={product}></Single>))
+    }
         </div>
     );
 };
