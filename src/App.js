@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Menubar from './Components/Menubar/Menubar';
+import All from './Components/All/All';
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
 
     <div>
 
-<Menubar></Menubar>
+<All></All>
 
     </div>
   );
