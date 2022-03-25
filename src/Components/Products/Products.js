@@ -6,6 +6,10 @@ const Products = () => {
 
     const [products, setProducts] = useState([]);
 
+    // console.log(products);
+  const handleButton = () => {
+        console.log('hi');
+    }
         useEffect(() => {
            fetch('https://fakestoreapi.com/products')
             .then(res=>res.json())
@@ -14,11 +18,15 @@ const Products = () => {
     return (
 
 
-        <div>
-            <div className='row'>
+        <div className='shop'>
+            <div className='product-container'>
  {
-                products.map((product)=>(<Single product={product}></Single>))
+                    products.map((product) => (<Single key={ product.id}product={product} handleButton={ handleButton}></Single>))
     }
+
+            </div>
+            <div className='cart-container'>
+
             </div>
            
         </div>
